@@ -112,28 +112,36 @@ body {
 
 .section-cards div {
   width: 33%;
-  height: 245px;
+  height: 15rem;
   background-color: #bc2c3d;
   margin: 7rem 3rem;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 450px) {
+  .section-main {
+    padding-top: 0;
+    flex-direction: column;
+  }
+
+  .section-main__nickname {
+    margin-top: 10rem;
+  }
+
   .section-main__car {
-    width: 1500px;
-    height: 490px;
-    margin-left: 80px;
-    margin-top: 100px;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    overflow: hidden;
+    justify-content: center;
   }
 
   .section-main__car img {
-    width: 1100px;
-    height: 1000px;
-    object-fit: contain;
-    margin-top: 150px;
-    margin-right: -670px;
+    position: unset;
+  }
+
+  .section-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-cards div {
+    width: 50%;
+    margin: 2rem 0;
   }
 }
