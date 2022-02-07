@@ -1,0 +1,141 @@
+@import url(./normalize.css);
+@import url(./global.css);
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 79px;
+    width: 100%;
+    background-color: #ffffff;
+
+
+}
+
+.navbar__logo {
+    flex-grow: 5;
+    text-align: center;
+    font-weight: 800;
+    cursor: pointer;
+
+
+}
+
+.navbar__items a {
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--black--color);
+}
+
+.navbar__items {
+    list-style: none;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-grow: 7;
+    text-align: left;
+
+
+}
+
+.navbar__items li {
+    margin: 2%;
+}
+
+
+
+/* main */
+/*
+.maxWidth {
+    max-width: 1152px;
+    padding: 0 64px;
+    margin: 0 auto;
+}
+*/
+.container {
+    width: 100%;
+    height: 100%;
+    background: url(../img/linea.svg) no-repeat right top;
+}
+
+.section-main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+
+}
+
+
+.section-main__nickname {
+    margin: 0 auto;
+    position: relative;
+    top: 250px;
+    text-align: center;
+
+}
+
+.section-main__nickname p:first-child {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.section-main__nickname p {
+    display: block;
+}
+
+.section-main__nickname span {
+    background-color: var(--red--color);
+    display: inline-block;
+    width: 7px;
+    height: 40px;
+    margin-left: 20px;
+}
+
+.section-main__nickname button {
+    cursor: pointer;
+    background-color: var(--red--color);
+    border: none;
+    margin-top: 10px;
+    border-radius: 27px;
+    width: 75px;
+    height: 25px;
+}
+
+
+.section-main__car {
+    width: 1004px;
+    height: 490px;
+    margin-left: 80px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+
+}
+
+.section-main__car img {
+    width: 1500px;
+    height: 1000px;
+    object-fit: cover;
+    margin-top: 150px;
+    margin-right: -370px;
+}
+
+.section-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    cursor: pointer;
+
+}
+
+.section-cards div {
+    width: 314px;
+    height: 245px;
+    background-color: var(--red--color);
+    margin: 100px;
+}
