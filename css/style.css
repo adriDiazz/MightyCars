@@ -4,42 +4,65 @@
 /* Navbar */
 .header {
     width: 100vw;
-    height: 80px;
+    height: 79px;
     background-color: #fff;
 }
 
 .header--container {
+    height: 100%;
     display: flex;
     justify-content: space-between;
-}
-
-.header__navbar {
-    display: flex;
-    justify-content: center;
-    align-self: center;
+    align-items: center;
 }
 
 .header__logo {
-    flex-grow: 5;
-    text-align: center;
+    /* flex-grow: 5;
+    text-align: center; */
     font-weight: 800;
     cursor: pointer;
 }
 
 .header__navbar-items {
-    list-style: none;
     display: flex;
-    justify-content: start;
-    align-items: center;
-    flex-grow: 7;
-    text-align: left;
+    list-style: none;
+    /* flex-grow: 7;
+    text-align: left; */
 }
 
 .header__navbar-item a {
+    display: block;
     cursor: pointer;
     padding: .5rem;
     text-decoration: none;
     color: var(--black--color);
+}
+
+.header__icons {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.header__search, .header__cart {
+    margin: 0 .5rem;
+}
+
+.header__input-search {
+    border: 1px solid var(--red--color);
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: .25rem;
+    padding-left: 2.75rem;
+}
+
+.header__icon-search {
+    position: absolute;
+    top: 15%;
+    left: 7%;
+}
+
+.header__cart svg {
+    margin-top: .25rem;
 }
 
 
@@ -52,34 +75,38 @@
 .hero--container {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    position: relative;
 }
 
 .hero__nickname {
     text-align: center;
+    align-self: center;
+    position: absolute;
+    left: 10%;
 }
 
 .hero__nickname p:first-child {
     font-weight: 700;
-    font-size: 30px;
+    font-size: 2rem;
 }
 
 .hero__nickname span {
     background-color: var(--red--color);
     display: inline-block;
-    width: 7px;
-    height: 40px;
-    margin-left: 20px;
+    width: 5px;
+    height: 30px;
+    margin-left: 10px;
 }
 
 .hero__nickname button {
+    display: inline-block;
+    padding: .5rem .75rem;
+    margin-top: 1.75rem;
+    border-radius: 1.75rem;
     cursor: pointer;
     background-color: var(--red--color);
+    color: #fff;
     border: none;
-    margin-top: 10px;
-    border-radius: 27px;
-    width: 75px;
-    height: 25px;
 }
 
 
@@ -88,7 +115,7 @@
     margin-top: 100px; */
     display: flex;
     justify-content: end;
-    align-items: center;
+    /* align-items: center; */
 }
 
 .hero__car img {
