@@ -12,41 +12,51 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-      <div class="navbar__logo">
-        <img src="" alt="logo" />
-      </div>
-      <ul class="navbar__items">
-        <li><a href="">HOME</a></li>
-        <li><a href="">MENU</a></li>
-        <li><a href="">MENU</a></li>
-        <li><a href="">MENU</a></li>
-      </ul>
-    </nav>
+
+    <!-- Header -->
+    <header class="header">
+      <div class="container header--container">
+        <div class="header__logo">
+          <img src="" alt="logo" />
+        </div>
+        <nav class="header__navbar">
+          <ul class="header__navbar-items">
+            <li class="header__navbar-item"><a href="">Inicio</a></li>
+            <li class="header__navbar-item"><a href="">Productos</a></li>
+            <li class="header__navbar-item"><a href="">Sobre nosotros</a></li>
+            <li class="header__navbar-item"><a href="">Marcas</a></li>
+            <li class="header__navbar-item"><a href="">Contacto</a></li>
+          </ul>
+        </nav>  
+      </div>      
+    </header>
+
     <!-- main  -->
     <!--Esto le dara un tamaño fijo//<div class="maxWidth">\\-->
-    <div class="container">
-      <div class="section-main">
-        <div class="section-main__nickname">
-          <p>NICKNAME <span></span></p>
-          <br />
-          <p>
-            himenaeos pharetra nisl mi nam,<br />
-            habitant lacbus non mattis blandit
-          </p>
-          <button>Ver mas</button>
+    <main class="container">
+      <section class="hero">
+        <div class="hero--container">
+            <div class="hero__nickname">
+              <p>NICKNAME <span></span></p>
+              <br />
+              <p>
+                himenaeos pharetra nisl mi nam,<br />
+                habitant lacbus non mattis blandit
+              </p>
+              <button>Ver mas</button>
+            </div>
+            <div class="hero__car">
+              <img src="img/carro'sombra.png" alt="" />
+            </div>
         </div>
-        <div class="section-main__car">
-          <img src="img/carro'sombra.png" alt="" />
-        </div>
-      </div>
-      <div class="section-cards">
+      </section>
+  
+      <section class="section-cards">
         <div></div>
         <div></div>
         <div></div>
-      </div>
-      <!--</div>-->
-    </div>
+      </section>
+    </main>
+  
   </body>
 </html>
