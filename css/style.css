@@ -3,68 +3,78 @@
 
 /* Navbar */
 .header {
-    width: 100vw;
-    height: 79px;
-    background-color: #fff;
+  width: 100vw;
+  height: 79px;
+  background-color: #fff;
 }
 
 .header--container {
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header__logo {
-    /* flex-grow: 5;
-    text-align: center; */
-    font-weight: 800;
-    cursor: pointer;
+  /* flex-grow: 5; */
+  text-align: center;
+  font-weight: 800;
+  cursor: pointer;
+  flex: 2;
+}
+
+.header__navbar {
+  flex: 6;
 }
 
 .header__navbar-items {
-    display: flex;
-    list-style: none;
-    /* flex-grow: 7;
+  display: flex;
+  list-style: none;
+  /* flex-grow: 7;
     text-align: left; */
 }
 
 .header__navbar-item a {
-    display: block;
-    cursor: pointer;
-    padding: .5rem;
-    text-decoration: none;
-    color: var(--black--color);
+  display: block;
+  cursor: pointer;
+  padding: 0.5rem;
+  text-decoration: none;
+  color: var(--black--color);
 }
 
 .header__icons {
-    display: flex;
-    justify-content: flex-end;
-    position: relative;
+  display: flex;
+  /* justify-content: flex-end; */
+  position: relative;
+  flex: 4;
 }
 
-.header__search, .header__cart {
-    margin: 0 .5rem;
+.header__search,
+.header__cart {
+  margin: 0 0.5rem;
 }
 
 .header__input-search {
-    border: 1px solid var(--red--color);
-    background-color: #fff;
-    border-radius: 1rem;
-    padding: .25rem;
-    padding-left: 2.75rem;
+  border: 1px solid var(--red--color);
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 0.25rem;
+  padding-left: 2.75rem;
+}
+
+.header__input-search:focus {
+  outline: none;
 }
 
 .header__icon-search {
-    position: absolute;
-    top: 15%;
-    left: 7%;
+  position: absolute;
+  top: 15%;
+  left: 5%;
 }
 
 .header__cart svg {
-    margin-top: .25rem;
+  margin-top: 0.25rem;
 }
-
 
 /* main */
 /* .container {
@@ -73,73 +83,94 @@
     background: url(../img/linea.svg) no-repeat right top;
 } */
 .hero--container {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
 }
 
 .hero__nickname {
-    align-self: center;
-    position: absolute;
-    left: 0;
+  align-self: center;
+  position: absolute;
+  left: 15%;
 }
 
 .hero__nickname p:first-child {
-    font-weight: 700;
-    font-size: 2rem;
+  font-weight: 700;
+  font-size: 2rem;
 }
 
 .hero__nickname span {
-    background-color: var(--red--color);
-    display: inline-block;
-    width: 5px;
-    height: 30px;
-    margin-left: 10px;
+  background-color: var(--red--color);
+  display: inline-block;
+  width: 5px;
+  height: 30px;
+  margin-left: 10px;
 }
 
 .hero__nickname button {
-    display: inline-block;
-    padding: .75rem 1rem;
-    margin-top: 1.75rem;
-    border-radius: 1.75rem;
-    cursor: pointer;
-    background-color: var(--red--color);
-    color: #fff;
-    border: none;
+  display: inline-block;
+  padding: 0.75rem 1rem;
+  margin-top: 1.75rem;
+  border-radius: 1.75rem;
+  cursor: pointer;
+  background-color: var(--red--color);
+  color: #fff;
+  border: none;
 }
 
-
 .hero__car {
-    /* margin-left: 80px;
+  /* margin-left: 80px;
     margin-top: 100px; */
-    display: flex;
-    justify-content: end;
-    /* align-items: center; */
+  display: flex;
+  justify-content: end;
+  /* align-items: center; */
 }
 
 .hero__svg {
-    position: absolute;
-    z-index: -10;
-    left: 70%;
+  position: absolute;
+  z-index: -10;
+  left: 70%;
 }
 
 .hero__img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    margin-right: -420px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-right: -420px;
 }
 
-.hero-cards {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    cursor: pointer;
+.section-cards {
+  display: flex;
+  justify-content: space-evenly;
+  /* flex-wrap: wrap; */
+  cursor: pointer;
+  height: 30rem;
 }
 
-.hero-cards div {
-    width: 314px;
-    height: 245px;
-    background-color: var(--red--color);
-    margin: 100px;
+.cards__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.cards__card:first-child .card__mid {
+  border-left: 0.4rem solid var(--red--color);
+  padding-left: 1rem;
+}
+
+.card__square {
+  width: 15rem;
+  height: 15rem;
+  background-color: var(--red--color);
+  /* margin: 100px; */
+}
+
+.card__mid {
+  text-align: center;
+}
+
+.card__speaker {
+  width: auto;
+  height: 5rem;
 }
