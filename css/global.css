@@ -1,16 +1,21 @@
 /*En este archivo  iran estilos que modifiquen globalmente* el css*/
 :root {
-    --bg--color: #F3F3F3;
-    --red--color: #BC2C3D;
-    --redOpaco--color: #DE6674;
+    --bg: #F3F3F3;
+    --primario: #BC2C3D;
+    --secundario: #DE6674;
+    --blanco:#fff;
      /*color de las letras*/
-    --Pcolor--color: #5A5A5A;
-    --black--color: #000000;
+    --parrafo: #5A5A5A;
+    --black: #000000;
 }
 
 body {
-    background-color: var(--bg--color);
+    background-color: var(--bg);
     font-family: 'Raleway', sans-serif;
+}
+.btn{
+    background-color: var(--primario);
+    padding: 2px;
 }
 
 @media (max-width: 700px) {

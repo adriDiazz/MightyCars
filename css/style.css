@@ -8,7 +8,7 @@
     align-items: center;
     height: 79px;
     width: 100%;
-    background-color: #ffffff;
+    background-color: var(--blanco);
 
 
 }
@@ -25,7 +25,7 @@
 .navbar__items a {
     cursor: pointer;
     text-decoration: none;
-    color: var(--black--color);
+    color: var(--black);
 }
 
 .navbar__items {
@@ -98,7 +98,7 @@
 }
 
 .section-main__nickname span {
-    background-color: var(--red--color);
+    background-color: var(--primario);
     display: inline-block;
     width: 7px;
     height: 40px;
@@ -107,13 +107,13 @@
 
 .section-main__nickname button {
     cursor: pointer;
-    background-color: var(--red--color);
+    background-color: var(--primario);
     border: none;
     margin-top: 10px;
     border-radius: 27px;
     width: 75px;
     height: 25px;
-    color: #fff;
+    color: var(--blanco);
 }
 
 
@@ -148,7 +148,7 @@
 .section-cards div {
     width: 314px;
     height: 245px;
-    background-color: var(--red--color);
+    background-color: var(--primario);
     margin: 100px;
     min-width: 314px;
 }
@@ -188,8 +188,8 @@
     }
 
     .navbar__input {
-        border: 1px solid #bc2c3d;
-        background-color: #fff;
+        border: 1px solid var(--primario);
+        background-color: var(--blanco);
         border-radius: 1rem;
         padding: .25rem;
         margin-right: 30px;
