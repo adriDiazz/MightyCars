@@ -1,80 +1,7 @@
 @import url(./normalize.css);
 @import url(./global.css);
+@import url(./responsive.css);
 
-/* Navbar */
-.header {
-  /* width: 100vw; */
-  height: 79px;
-  background-color: #fff;
-}
-
-.header--container {
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.header__logo {
-  /* flex-grow: 5; */
-  text-align: center;
-  font-weight: 800;
-  cursor: pointer;
-  flex: 2;
-}
-
-.header__navbar {
-  flex: 6;
-}
-
-.header__navbar-items {
-  display: flex;
-  list-style: none;
-  /* flex-grow: 7;
-    text-align: left; */
-}
-
-.header__navbar-item a {
-  display: block;
-  cursor: pointer;
-  padding: 0.5rem;
-  text-decoration: none;
-  color: var(--black--color);
-}
-
-.header__icons {
-  display: flex;
-  /* justify-content: flex-end; */
-  position: relative;
-  flex: 4;
-}
-
-.header__search,
-.header__cart {
-  margin: 0 0.5rem;
-}
-
-.header__input-search {
-  border: 1px solid var(--red--color);
-  background-color: #fff;
-  border-radius: 1rem;
-  padding: 0.25rem;
-  padding-left: 2.75rem;
-}
-
-.header__input-search:focus {
-  outline: none;
-}
-
-.header__icon-search {
-  position: absolute;
-  top: 15%;
-  left: 5%;
-}
-
-.header__cart svg {
-  margin-top: 0.25rem;
-}
 
 /* main */
 /* .container {
@@ -135,7 +62,6 @@
 .hero__img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
   margin-right: -420px;
 }
 
@@ -174,3 +100,5 @@
   width: auto;
   height: 5rem;
 }
+
+/* añado responsive al final del css por la cascada */
