@@ -47,7 +47,7 @@
     opacity: 0;
 }
 
-.navbar__sarch {
+.navbar__search {
     opacity: 0;
     display: flex;
     justify-content: center;
@@ -182,7 +182,7 @@
         opacity: 1;
     }
     
-    .navbar__sarch {
+    .navbar__search {
         opacity: 1;
 
     }
@@ -195,7 +195,7 @@
         margin-right: 30px;
     }
 
-    .navbar__sarch img {
+    .navbar__search img {
         padding: .25rem;
         margin-right: 30px;
     }
