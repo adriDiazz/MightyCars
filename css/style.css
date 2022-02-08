@@ -165,17 +165,21 @@
     align-items: center;
     flex-wrap: wrap;
     cursor: pointer;
-    margin-top: 10px;
 }
 
 .section__speakers div {
-    width: 250px;
-    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 200px;
+    height: 200px;
 }
 
 .section__speakers--img {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
 }
 
 
