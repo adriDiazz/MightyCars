@@ -3,7 +3,7 @@
 
 /* Navbar */
 .header {
-  width: 100vw;
+  /* width: 100vw; */
   height: 79px;
   background-color: #fff;
 }
@@ -147,30 +147,30 @@
   height: 30rem;
 }
 
-.cards__card {
+.section-cards__card {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
 }
 
-.cards__card:first-child .card__mid {
+.section-cards__card:first-child .section-cards__mid {
   border-left: 0.4rem solid var(--red--color);
   padding-left: 1rem;
 }
 
-.card__square {
+.section-cards__square {
   width: 15rem;
   height: 15rem;
   background-color: var(--red--color);
   /* margin: 100px; */
 }
 
-.card__mid {
+.section-cards__mid {
   text-align: center;
 }
 
-.card__speaker {
+.section-cards__speaker {
   width: auto;
   height: 5rem;
 }
