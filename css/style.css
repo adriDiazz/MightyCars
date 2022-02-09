@@ -4,15 +4,17 @@
 
 
 /* main */
-/* .container {
+ /* .header {
     width: 100%;
     height: 100%;
     background: url(../img/linea.svg) no-repeat right top;
-} */
+}  */
+
 .hero--container {
   display: flex;
   justify-content: space-between;
   position: relative;
+  width: 100%;
 }
 
 .hero__nickname {
@@ -57,10 +59,11 @@
 .hero__svg {
   position: absolute;
   z-index: -10;
-  left: 0%;
+  left: 0;
 }
 
 .hero__img {
+  width: 80px;
   margin-right: -670px;
 }
 
@@ -106,6 +109,80 @@
 .section-cards__speaker {
   width: auto;
   height: 5rem;
+}
+
+
+
+.sap {
+  margin-top:100px;
+  display: grid;
+  grid-template-columns: 320px 400px;
+  justify-content: center;
+  gap: 5em;
+  align-content: center;
+  
+}
+
+.section-somos_info {
+  display: flex;
+  gap: 2em;
+}
+
+.section-somos_info::before {
+  content: "";
+  position: absolute;
+  width: 0.4rem;
+  height: 90px;
+  left: 68%;
+  top: 220%;
+  background-color: var(--red--color);
+}
+
+.section-somos__title {
+    width: 100%;
+    height: 20%;
+    font-size: 2rem;
+    border-right: 0.4rem solid var(--red--color);
+}
+
+.section-somos_textOne {
+    display: flex;
+    flex-direction: column;
+    gap: .7em;
+    height: 1%;
+}
+
+.section-somos_textOne h4 {
+  font-size: 1.3rem;
+}
+
+.section-somos_textOne p {
+    width: 300px;
+    line-height: 1.3rem;
+    word-spacing: 0.2rem;
+    font-weight: 600;
+    color: grey;
+}
+
+.section-somos__textTwo {
+  display: flex;
+  flex-direction: column;
+  gap: .7em;
+  height: 1%;
+}
+
+
+
+.section-somos__textTwo h4 {
+  font-size: 1.3rem;
+}
+
+.section-somos__textTwo p {
+  width: 300px;
+  line-height: 1.3rem;
+  word-spacing: 0.2rem;
+  font-weight: 600;
+  color: grey;
 }
 
 /* añado responsive al final del css por la cascada */
