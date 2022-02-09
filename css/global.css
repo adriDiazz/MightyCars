@@ -31,9 +31,8 @@ body {
 /* Header */
 
 .header {
-  /* width: 100vw; */
   height: 79px;
-  background-color: #fff;
+  background-color: transparent;
 }
 
 .header--container {
@@ -44,42 +43,56 @@ body {
 }
 
 .header__logo {
-  /* flex-grow: 5; */
   text-align: center;
   font-weight: 800;
   cursor: pointer;
   flex: 2;
-}
-
-.header__navbar {
-  flex: 6;
+  display: none;
 }
 
 .header__btn-navbar {
   width: 2.5rem;
   margin-left: .75rem;
-  display: none;
+}
+
+.header__navbar {
+  width: 100%;
+  padding: .75em;
+  position: fixed;
+  bottom: 0;
+  z-index: 100;
+  background-color: #ffffffaa;
 }
 
 .header__navbar-items {
+  width: 100vw;
+  height: 50vh;
+  padding: 0;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   list-style: none;
-  /* flex-grow: 7;
-    text-align: left; */
+}
+
+.header__navbar-items {
+  display: none;
 }
 
 .header__navbar-item a {
   display: block;
+  padding: 1rem;
   cursor: pointer;
-  padding: 0.75rem;
   text-decoration: none;
+  font-weight: 700;
   color: var(--black--color);
 }
 
 .header__icons {
+  margin: 0 1rem;
   display: flex;
-  /* justify-content: flex-end; */
   position: relative;
+  justify-content: space-between;
   flex: 4;
 }
 
@@ -103,7 +116,7 @@ body {
 .header__icon-search {
   position: absolute;
   top: 15%;
-  left: 5%;
+  left: 4%;
 }
 
 .header__cart svg {
