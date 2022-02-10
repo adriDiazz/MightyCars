@@ -1,10 +1,9 @@
 @import url(./normalize.css);
 @import url(./global.css);
-@import url(./responsive.css);
-
+/* @import url(./responsive.css); */
 
 /* main */
- /* .header {
+/* .header {
     width: 100%;
     height: 100%;
     background: url(../img/linea.svg) no-repeat right top;
@@ -80,7 +79,8 @@
   justify-content: space-evenly;
   /* flex-wrap: wrap; */
   cursor: pointer;
-  height: 30rem;
+  /* height: 30rem; */
+  flex-direction: column;
 }
 
 .section-cards__card {
@@ -88,6 +88,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  margin-bottom: 5rem;
+  gap: 2rem;
 }
 
 .section-cards__card:first-child .section-cards__mid {
@@ -111,20 +113,20 @@
   height: 5rem;
 }
 
-
-
 .sap {
-  margin-top:100px;
-  display: grid;
-  grid-template-columns: 320px 400px;
-  justify-content: center;
+  /* margin-top:100px; */
+  display: flex;
+  flex-direction: column;
+  /* grid-template-columns: 320px 400px; */
+  /* justify-content: center; */
   gap: 5em;
-  align-content: center;
-  
+  padding: 0 2rem;
+  align-items: center;
 }
 
 .section-somos_info {
   display: flex;
+  flex-direction: column;
   gap: 2em;
 }
 
@@ -139,17 +141,17 @@
 }
 
 .section-somos__title {
-    width: 100%;
-    height: 20%;
-    font-size: 2rem;
-    border-right: 0.4rem solid var(--red--color);
+  width: 100%;
+  height: 20%;
+  font-size: 2rem;
+  border-right: 0.4rem solid var(--red--color);
 }
 
 .section-somos_textOne {
-    display: flex;
-    flex-direction: column;
-    gap: .7em;
-    height: 1%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7em;
+  height: 1%;
 }
 
 .section-somos_textOne h4 {
@@ -157,21 +159,19 @@
 }
 
 .section-somos_textOne p {
-    width: 300px;
-    line-height: 1.3rem;
-    word-spacing: 0.2rem;
-    font-weight: 600;
-    color: grey;
+  width: 300px;
+  line-height: 1.3rem;
+  word-spacing: 0.2rem;
+  font-weight: 600;
+  color: grey;
 }
 
 .section-somos__textTwo {
   display: flex;
   flex-direction: column;
-  gap: .7em;
+  gap: 0.7em;
   height: 1%;
 }
-
-
 
 .section-somos__textTwo h4 {
   font-size: 1.3rem;
@@ -186,3 +186,104 @@
 }
 
 /* añado responsive al final del css por la cascada */
+@media (min-width: 768px) {
+  .header {
+    background-color: #fff;
+  }
+
+  .header__logo {
+    display: block;
+  }
+
+  .header__navbar {
+    flex: 6;
+  }
+
+  .header__btn-navbar {
+    display: none;
+  }
+
+  .header__navbar {
+    width: auto;
+    position: initial;
+  }
+
+  .header__navbar-items {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .header__navbar-item a {
+    padding: 0.75rem;
+    font-weight: 400;
+  }
+
+  .header__icons {
+    margin: 0;
+    justify-content: flex-start;
+  }
+
+  .header__icon-search {
+    left: 5%;
+  }
+
+  /* Section Hero */
+
+  .hero .hero__nickname {
+    /* left: 15%; */
+    flex: 6;
+    text-align: center;
+    position: unset;
+  }
+
+  .hero__car {
+    /* width: 1500px; */
+    /* height: 490px; */
+    /* margin-top: 100px; */
+    padding-top: 10rem;
+    align-items: center;
+    /* overflow: hidden; */
+    flex: 6;
+    position: relative;
+    height: 40rem;
+  }
+
+  .hero__car .hero__svg {
+    height: unset;
+    right: 0;
+    left: unset;
+  }
+
+  .hero__car img {
+    /* height: 1000px; */
+    object-fit: contain;
+  }
+
+  .hero__car .hero__img {
+    position: absolute;
+    width: auto;
+    height: 40rem;
+    margin-right: -420px;
+  }
+
+  /* .hero__car .hero__svg {
+    left: 40%;
+  } */
+
+  .section-cards,
+  .sap,
+  .section-somos_info {
+    flex-direction: row;
+  }
+
+  .section-somos__title {
+    text-align: center;
+  }
+
+  .section-somos__title,
+  .section-somos_info {
+    flex: 6;
+  }
+}
