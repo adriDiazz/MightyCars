@@ -1,5 +1,4 @@
 @media (min-width: 768px) {
-
   .header {
     background-color: #fff;
   }
@@ -7,11 +6,11 @@
   .header__logo {
     display: block;
   }
-  
+
   .header__navbar {
     flex: 6;
   }
-  
+
   .header__btn-navbar {
     display: none;
   }
@@ -20,7 +19,7 @@
     width: auto;
     position: initial;
   }
-  
+
   .header__navbar-items {
     width: auto;
     height: auto;
@@ -42,9 +41,8 @@
     left: 5%;
   }
 
-
   /* Section Hero */
-  
+
   .hero .hero__nickname {
     left: 15%;
   }
@@ -72,5 +70,7 @@
     left: 40%;
   }
 
-  
+  .section-cards {
+    flex-direction: row;
+  }
 }
