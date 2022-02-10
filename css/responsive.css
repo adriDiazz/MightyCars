@@ -73,4 +73,9 @@
   .section-cards {
     flex-direction: row;
   }
+
+  .chevrolet {
+    position: absolute;
+    top: 20%;
+  }
 }
