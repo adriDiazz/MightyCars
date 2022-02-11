@@ -121,7 +121,7 @@
   /* justify-content: center; */
   gap: 5em;
   padding: 0 2rem;
-  
+
 }
 
 .section-somos_info {
@@ -147,6 +147,7 @@
   font-size: 2rem;
   border-right: 0.4rem solid var(--red--color);
 }
+
 .section-marcas__title {
   width: 100%;
   height: 20%;
@@ -288,14 +289,12 @@
 }
 
 /*Footer*/
-
 .footer {
   width: 100%;
   height: 200px;
   background-color: var(--red--color);
   margin-top: 100px;
 }
-
 
 /* añado responsive al final del css por la cascada */
 @media (min-width: 768px) {
@@ -393,6 +392,7 @@
   .section-somos {
     margin-top: 100px;
   }
+
   .section-somos__title {
     text-align: center;
   }
@@ -427,8 +427,9 @@
     height: 10%;
     border-right: 0.4rem solid var(--red--color);
     font-size: 2rem;
-    
+
   }
+
   .section-marcas_textOne {
     padding: 200px;
   }

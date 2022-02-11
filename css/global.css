@@ -32,7 +32,9 @@ body {
 
 .header {
   height: 79px;
-  background-color: transparent;
+  width: 100%;
+  position: fixed;
+  z-index: 99;
 }
 
 .header--container {
