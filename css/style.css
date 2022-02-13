@@ -121,7 +121,6 @@
   /* justify-content: center; */
   gap: 5em;
   padding: 0 2rem;
-
 }
 
 .section-somos_info {
@@ -211,21 +210,21 @@
   /* justify-content: center; */
   gap: 5em;
   padding: 0 2rem;
+  margin: 0 auto;
 }
 
 .section-marcas_textOne {
   color: var(--red--color);
 }
 
-
 .section-marcas_info {
   display: grid;
   grid-template-columns: repeat(3, minmax(10px, auto));
   gap: 3em;
-  padding: 200px;
+  /* padding: 200px; */
 }
 
-.section-marcas_textuno{
+.section-marcas_textuno {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -233,13 +232,12 @@
   /* gap: 1.5rem ; */
   /* padding-left: 10px; */
 }
-.section-marcas_textTwo{
+.section-marcas_textTwo {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: flex-start;
 }
-
 
 .marcas {
   width: 100px;
@@ -261,28 +259,28 @@
 
 .toyota {
   width: 100px;
-  
+
   opacity: 0;
   transition: opacity 250ms ease-in;
 }
 
 .mercedes {
   width: 100px;
-  
+
   opacity: 0;
   transition: opacity 250ms ease-in;
 }
 
 .honda {
   width: 100px;
-  
+
   opacity: 0;
   transition: opacity 250ms ease-in;
 }
 
 .romeo {
   width: 100px;
-  
+
   opacity: 0;
   transition: opacity 250ms ease-in;
 }
@@ -295,17 +293,51 @@
   margin-top: 100px;
 }
 
-
 .fade-in {
   opacity: 1;
 }
 
 /*Footer*/
 .footer {
-  width: 100%;
-  height: 200px;
+  /* width: 100%; */
+  /* height: 200px; */
   background-color: var(--red--color);
   margin-top: 100px;
+  padding-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__links {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__link a,
+.footer__terms p a,
+.footer__copyright p {
+  color: #fff;
+}
+
+.footer__links,
+.footer__terms,
+.footer__copyright {
+  margin: 1rem 0;
+}
+
+.footer__link a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+
+.footer__logo {
+  width: auto;
+  height: 5rem;
 }
 
 /* añado responsive al final del css por la cascada */
@@ -418,9 +450,8 @@
     display: flex;
     justify-content: space-evenly;
     gap: 0;
-    /* align-items: center; */
-    flex-direction: row;
-    width: 80%;
+    flex-direction: column;
+    padding: 0;
   }
 
   .section-marcas__title {
@@ -428,22 +459,34 @@
     height: 10%;
     border-right: 0.4rem solid var(--red--color);
     font-size: 2rem;
+    flex: 6;
+    margin-left: 11rem;
   }
 
   .section-need__title {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    width: 20%;
+    /* align-items: center; */
+    width: 30%;
     height: 10%;
     border-right: 0.4rem solid var(--red--color);
     font-size: 2rem;
-
+    margin-left: 11rem;
   }
 
   .section-marcas_textOne {
     padding: 200px;
+  }
+
+  .section-marcas_info {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(10px, auto));
+    width: 30%;
+    margin: 0 auto;
+    flex: 6;
+    justify-items: center;
+    margin-top: 5rem;
   }
 
   .toy {
@@ -474,5 +517,13 @@
   .romeo {
     top: 79%;
     left: 49%;
+  }
+
+  .footer {
+    padding-bottom: 0;
+  }
+
+  .footer__links {
+    flex-direction: row;
   }
 }
