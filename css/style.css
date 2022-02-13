@@ -222,6 +222,7 @@
   display: grid;
   grid-template-columns: repeat(3, minmax(10px, auto));
   gap: 3em;
+  padding: 200px;
 }
 
 .section-marcas_textuno{
