@@ -217,60 +217,71 @@
   color: var(--red--color);
 }
 
+
+.section-marcas_info {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(10px, auto));
+  gap: 3em;
+}
+
+.section-marcas_textuno{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  /* gap: 1.5rem ; */
+  /* padding-left: 10px; */
+}
+.section-marcas_textTwo{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+
 .marcas {
   width: 100px;
 }
 
 .toy {
   width: 100px;
-  position: absolute;
-  top: 211rem;
-  left: 17%;
+
   opacity: 0;
   transition: opacity 250ms ease-in;
 }
 
 .chevrolet {
   width: 100px;
-  position: absolute;
-  top: 217.8rem;
-  left: 56%;
+
   opacity: 0;
   transition: opacity 250ms ease-in;
 }
 
 .toyota {
   width: 100px;
-  position: absolute;
-  top: 204rem;
-  left: 56%;
+  
   opacity: 0;
   transition: opacity 250ms ease-in;
 }
 
 .mercedes {
-  width: 120px;
-  position: absolute;
-  top: 224.4rem;
-  left: 15%;
+  width: 100px;
+  
   opacity: 0;
   transition: opacity 250ms ease-in;
 }
 
 .honda {
   width: 100px;
-  position: absolute;
-  top: 231.6rem;
-  left: 56%;
+  
   opacity: 0;
   transition: opacity 250ms ease-in;
 }
 
 .romeo {
   width: 100px;
-  position: absolute;
-  top: 238rem;
-  left: 17%;
+  
   opacity: 0;
   transition: opacity 250ms ease-in;
 }
