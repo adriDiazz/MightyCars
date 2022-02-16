@@ -213,10 +213,6 @@
   margin: 0 auto;
 }
 
-.section-marcas_textOne {
-  color: var(--red--color);
-}
-
 .section-marcas_info {
   display: grid;
   grid-template-columns: repeat(3, minmax(10px, auto));
@@ -224,63 +220,54 @@
   /* padding: 200px; */
 }
 
-.section-marcas_textuno {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: flex-end;
-  /* gap: 1.5rem ; */
-  /* padding-left: 10px; */
+.section-marcas_info > img {
+  justify-self: center;
 }
-.section-marcas_textTwo {
+
+.section-marcas__text-one,
+.section-marcas__text-two {
+  display: grid;
+  grid-template-rows: repeat(6, 110px);
+  justify-items: end;
+}
+
+.section-marcas__text-two {
+  justify-items: start;
+}
+
+.section-marcas__text-one img:nth-child(1) {
+  grid-row: 2 / 3;
+}
+.section-marcas__text-one img:nth-child(2) {
+  grid-row: 4 / 5;
+}
+.section-marcas__text-one img:nth-child(3) {
+  grid-row: 6 / 7;
+}
+
+.section-marcas__text-two img:nth-child(1) {
+  grid-row: 1 / 2;
+}
+.section-marcas__text-two img:nth-child(2) {
+  grid-row: 3 / 4;
+}
+.section-marcas__text-two img:nth-child(3) {
+  grid-row: 5 / 6;
+}
+
+/* .section-marcas__text-two {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: flex-start;
-}
+} */
 
 .marcas {
   width: 100px;
 }
 
-.toy {
+.toy, .chevrolet, .toyota, .mercedes, .honda, .romeo {
   width: 100px;
-
-  opacity: 0;
-  transition: opacity 250ms ease-in;
-}
-
-.chevrolet {
-  width: 100px;
-
-  opacity: 0;
-  transition: opacity 250ms ease-in;
-}
-
-.toyota {
-  width: 100px;
-
-  opacity: 0;
-  transition: opacity 250ms ease-in;
-}
-
-.mercedes {
-  width: 100px;
-
-  opacity: 0;
-  transition: opacity 250ms ease-in;
-}
-
-.honda {
-  width: 100px;
-
-  opacity: 0;
-  transition: opacity 250ms ease-in;
-}
-
-.romeo {
-  width: 100px;
-
   opacity: 0;
   transition: opacity 250ms ease-in;
 }
@@ -480,12 +467,9 @@
   }
 
   .section-marcas_info {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(10px, auto));
     width: 30%;
     margin: 0 auto;
     flex: 6;
-    justify-items: center;
     margin-top: 5rem;
   }
 
