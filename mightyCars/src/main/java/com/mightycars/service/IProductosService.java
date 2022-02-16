@@ -6,6 +6,6 @@ import com.mightycars.model.Producto;
 
 public interface IProductosService  {
 	
-	List<Producto> buscarTodas(); 
+	List<Producto> obtenerProductos();
 
 }

@@ -13,12 +13,12 @@ import com.mightycars.service.IProductosService;
 public class ProductoService implements IProductosService {
 	
 	@Autowired
-	private ProductosRepository productRepo;
+	private ProductosRepository productoRepo; 
 
 	@Override
-	public List<Producto> buscarTodas() {
+	public List<Producto> obtenerProductos() {
 		
-		return productRepo.findAll();
+		return productoRepo.findAll();
 	}
 
 }
