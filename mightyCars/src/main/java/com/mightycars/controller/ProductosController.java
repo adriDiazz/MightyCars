@@ -26,7 +26,7 @@ public class ProductosController {
 		return productoService.obtenerProductos();
 	}
 	
-	@GetMapping("/detalle-productoss") 
+	@GetMapping("/detalle-productos") 
 	public List<DetalleProducto> detalleProductos() {
 		return detalleService.obtenerDetalles();
 	}
