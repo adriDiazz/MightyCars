@@ -98,10 +98,28 @@
 }
 
 .section-cards__square {
-  width: 17rem;
-  height: 15rem;
-  background-color: var(--red--color);
-  /* margin: 100px; */
+  /* width: 17rem; */
+  width: 314px;
+  height: 21em;
+  padding: 2rem;
+  background-color: var(--white--color);
+  background-image: url(../img/llantas.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  border-radius: 1.75rem;
+  box-shadow: 0 4px 4px var(--box--shadow);
+  text-align: center;
+}
+
+.section-cards__square h3 {
+  color: var(--red--color);
+  font-size: 1.75rem;
+}
+
+.section-cards__square p {
+  margin: 1rem 0;
+  font-size: .90rem;
 }
 
 .section-cards__mid {
@@ -148,18 +166,20 @@
   border-right: 0.4rem solid var(--red--color);
 }
 
-.section-somos_textOne {
+.section-somos_textOne,
+.section-somos__textTwo {
   display: flex;
   flex-direction: column;
   gap: 0.7em;
-  height: 1%;
+  /* height: 1%; */
 }
 
-.section-somos_textOne h4 {
+.section-somos_textOne h4,
+.section-somos__textTwo h4 {
   font-size: 1.3rem;
 }
 
-.section-marcas_textOne {
+/* .section-marcas_textOne {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -167,7 +187,7 @@
 
 .section-marcas_textOne img {
   width: fit-content;
-}
+} */
 
 .section-somos_textOne p,
 .section-somos__textTwo p {
@@ -178,16 +198,16 @@
   color: grey;
 }
 
-.section-somos__textTwo {
+/* .section-somos__textTwo {
   display: flex;
   flex-direction: column;
   gap: 0.7em;
   height: 1%;
-}
+} */
 
-.section-somos__textTwo h4 {
+/* .section-somos__textTwo h4 {
   font-size: 1.3rem;
-}
+} */
 
 /* .section-somos__textTwo p {
   width: 300px;
@@ -424,27 +444,49 @@
     left: 40%;
   } */
 
-  .section-cards,
-  .sap,
-  .section-somos_info {
-    flex-direction: row;
+  .section-cards {
+    flex-flow: row wrap;
   }
 
-  .sap {
-    gap: 5em;
+  .section-cards__card {
+    margin: 1rem;
   }
 
-  .section-somos_info {
-    gap: 0;
-    margin-bottom: 0;
+  .section-cards__square {
+    height: 17rem;
+    padding: 1rem;
+  }
+
+  .section-cards__square h3 {
+    font-size: 1.5rem;
+  }
+
+  .section-cards__square p {
+    font-size: .75rem;
+    margin: .75rem 0;
   }
 
   .section-somos {
     margin-top: 100px;
   }
 
+  .sap {
+    /* gap: 5em; */
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-areas: 'title' 'info' ;
+  }
+
+  .section-somos_info {
+    margin-bottom: 0;
+    grid-area: info;
+    grid-column: 3 / 5;
+    grid-row: 1;
+  }
+
   .section-somos__title {
-    text-align: end;
+    grid-area: title;
+    grid-column: 1 / 3;
   }
 
   .section-somos__title p {
@@ -533,12 +575,16 @@
 }
 
 @media (min-width: 1200px) {
-  .section-somos__title,
-  .section-somos_info {
-    flex: 6;
+
+  .sap {
+    padding: 0 10rem;
   }
 
   .section-somos_info {
-    margin-right: 5em;
+    flex-direction: row;
+  }
+
+  .section-somos__title {
+    height: 25%;
   }
 }

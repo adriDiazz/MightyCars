@@ -1,11 +1,14 @@
 /*En este archivo  iran estilos que modifiquen globalmente* el css*/
 :root {
   --bg--color: #f3f3f3;
+  --bg--color--alpha: #f3f3f377;
   --red--color: #bc2c3d;
   --redOpaco--color: #de6674;
   /*color de las letras*/
   --Pcolor--color: #5a5a5a;
   --black--color: #000000;
+  --white--color: #ffffff;
+  --box--shadow: #00000040;
 }
 
 body {
@@ -35,6 +38,7 @@ body {
   width: 100%;
   position: fixed;
   z-index: 99;
+  background-color: var(--bg--color--alpha);
 }
 
 .header--container {
