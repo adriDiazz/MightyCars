@@ -27,6 +27,7 @@ public class ProductosController {
 		return productoService.obtenerProductos();
 	}
 	
+
 	//@CrossOrigin(origins = "https://mightycars.herokuapp.com/")
 	@GetMapping("/detalle-productos") 
 	public List<DetalleProducto> detalleProductos() {
