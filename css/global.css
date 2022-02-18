@@ -65,9 +65,10 @@ body {
   width: 100%;
   padding: .75em;
   position: fixed;
+  height: 66px;
   bottom: 0;
   z-index: 100;
-  background-color: #ffffffaa;
+  background-color: #ffffff;
 }
 
 .header__navbar-items {

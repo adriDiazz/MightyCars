@@ -1,0 +1,1 @@
+const productsButton = document.querySelector('.products-button');

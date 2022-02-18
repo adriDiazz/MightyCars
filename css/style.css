@@ -1,5 +1,6 @@
 @import url(./normalize.css);
 @import url(./global.css);
+
 /* @import url(./responsive.css); */
 
 /* main */
@@ -52,6 +53,7 @@
     margin-top: 100px; */
   display: flex;
   justify-content: end;
+  margin-top: 100px;
   /* align-items: center; */
 }
 
@@ -63,7 +65,7 @@
 
 .hero__img {
   width: 80px;
-  margin-right: -670px;
+  margin-right: -680px;
 }
 
 .hero__car .hero__svg {
@@ -348,6 +350,129 @@
   height: 5rem;
 }
 
+/* productos view */
+ 
+
+
+
+.hero-prod {
+  height: 100%;
+  overflow: hidden;
+}
+
+.hero-prod::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  background-color: var(--red--color);
+  top: 650px;
+  z-index: 43;
+}
+
+.hero-prod img{
+  height: 50%;
+  /* position: fixed; */
+}
+
+.cards__container {
+  overflow: hidden;
+  margin-top: 43px;
+}
+
+.cards__container img{
+  width: 100%;
+  clip-path: polygon(0 0%, 70% 0%, 100% 100%, 0% 100%);
+}
+
+.info-cards {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.nombrecarro {
+  color: var(--red--color);
+  font-size: 1.5em;
+  font-weight: 100;
+}
+
+
+
+.linea{
+  background-color: var(--red--color);
+  width: 100%;
+  height:2px;
+}
+
+.name__cards_info{
+  display: grid;
+  grid-template-columns: repeat(2 ,1fr);
+  margin-top: 3px;
+}
+
+.name__cards_info p {
+  font-weight: 100;
+  /* color: var(--red--color); */
+}
+
+.buttons {
+  margin-top:50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 1em;
+  margin-right: 20px;
+}
+
+.btn-select {
+    background-color: var(--red--color);
+    /* border-radius: 8px; */
+    border-width: 0;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 10px 12px;
+    text-align: center;
+    transition: all 200ms;
+    vertical-align: baseline;
+    white-space: nowrap;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+
+.btn-detail {
+  background-color: rgba(51, 51, 51, 0.05);
+  border-width: 0;
+  color: var(--red--color);
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 10px 12px;
+  text-align: center;
+  transition: all 200ms;
+  vertical-align: baseline;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+
 /* añado responsive al final del css por la cascada */
 @media (min-width: 768px) {
   .header {
@@ -572,6 +697,33 @@
   .footer__links {
     flex-direction: row;
   }
+
+  .hero-prod img {
+    width: 100%;
+  }
+
+  .hero-prod::after {
+    content: "";
+    width: 0;
+  }
+
+  .cards__container {
+    margin-top: 0;
+  }
+
+  .hero-prod{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+ .linea-hero {
+   width: 100%;
+   height: 100px;
+   background-color: var(--red--color);
+   }
+
+
 }
 
 @media (min-width: 1200px) {
@@ -587,4 +739,22 @@
   .section-somos__title {
     height: 25%;
   }
+
+  .cards{
+    display: flex;
+
+  }
+  .hero-prod{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+ .linea-hero {
+   width: 100%;
+   height: 100px;
+   background-color: var(--red--color);
+ }
+
+
 }
