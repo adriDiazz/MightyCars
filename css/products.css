@@ -1,107 +1,83 @@
-@import url(./normalize.css);
-@import url(./global.css);
-
-
-
 .hero-prod {
-    height: 100%;
-    overflow: hidden;
-  }
-  
-  .hero-prod::after{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 60px;
-    background-color: var(--red--color);
-    top: 650px;
-    z-index: 43;
-  }
-  
-  .hero-prod img{
-    height: 50%;
-    /* position: fixed; */
-  }
-  
-  .cards__container {
-    overflow: hidden;
-    margin-top: 43px;
-  }
-  
-  .cards__container img{
-    width: 100%;
-    clip-path: polygon(0 2%, 70% 1%, 100% 100%, 0% 100%);
-  }
-  
-  .info-cards {
-    width: 100%;
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  
-  .nombrecarro {
-    color: var(--red--color);
-    font-size: 1.5em;
-    font-weight: 100;
-  }
-  
-  
-  
-  .linea{
-    background-color: var(--red--color);
-    width: 100%;
-    height:2px;
-  }
-  
-  .name__cards_info{
-    display: grid;
-    grid-template-columns: repeat(2 ,1fr);
-    margin-top: 3px;
-  }
-  
-  .name__cards_info p {
-    font-weight: 100;
-    /* color: var(--red--color); */
-  }
-  
-  .buttons {
-    margin-top:50px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    gap: 1em;
-    margin-right: 20px;
-  }
-  
-  .btn-select {
-      background-color: var(--red--color);
-      /* border-radius: 8px; */
-      border-width: 0;
-      color: #fff;
-      cursor: pointer;
-      display: inline-block;
-      font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
-      font-size: 14px;
-      font-weight: 500;
-      line-height: 20px;
-      list-style: none;
-      margin: 0;
-      padding: 10px 12px;
-      text-align: center;
-      transition: all 200ms;
-      vertical-align: baseline;
-      white-space: nowrap;
-      user-select: none;
-      -webkit-user-select: none;
-      touch-action: manipulation;
-    }
-  
-  .btn-detail {
-  background-color: rgba(51, 51, 51, 0.05);
-  border-width: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.hero-prod::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  background-color: var(--red--color);
+  top: 650px;
+  z-index: 43;
+}
+
+.hero-prod img{
+  height: 50%;
+  /* position: fixed; */
+}
+
+.cards__container {
+  overflow: hidden;
+  margin-top: 43px;
+}
+
+.cards { 
+  margin-bottom: 1rem;
+}
+
+.cards__container img{
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(0 0%, 70% 0%, 100% 100%, 0% 100%);
+}
+
+.info-cards {
+  width: 100%;
+  height: 200px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.nombrecarro {
   color: var(--red--color);
+  font-size: 1.5em;
+  font-weight: 100;
+}
+
+
+.linea{
+  background-color: var(--red--color);
+  width: 100%;
+  height:2px;
+}
+
+.name__cards_info{
+  display: grid;
+  grid-template-columns: repeat(2 ,1fr);
+  margin-top: 3px;
+}
+
+.name__cards_info p {
+  font-weight: 100;
+  /* color: var(--red--color); */
+}
+
+.buttons {
+  margin-top:50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 1em;
+  margin-right: 20px;
+}
+
+.btn-detail,
+.btn-select {
+  border-width: 0;
   cursor: pointer;
   display: inline-block;
   font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -115,7 +91,19 @@
   transition: all 200ms;
   vertical-align: baseline;
   white-space: nowrap;
-  user-select: none;
+  user-select: none; 
   -webkit-user-select: none;
   touch-action: manipulation;
-  }
+}
+
+.btn-select {
+  background-color: var(--red--color);
+  border-radius: 8px;
+  color: #fff;
+  
+} 
+
+.btn-detail {
+  background-color: rgba(51, 51, 51, 0.05);
+  color: var(--red--color);
+}

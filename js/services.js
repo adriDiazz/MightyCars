@@ -15,7 +15,7 @@
     .then(response => response.json())
     .then(cars => {
         const tlp = cars.map(car => `<div class="cards">
-        <img src="${car.imagen}" alt="">
+        <img src="${car.imagen}" alt="${car.modelo}">
         <div class="info-cards">
             <span class="nombrecarro">${car.marca.toUpperCase() + ' ' + car.modelo}</span>
             <span class="linea"></span>
@@ -25,7 +25,7 @@
                     <p>Coche coche uno coche</p>
                 </div>
                 <div class="info">
-                    <p>PRECIO: ${car.precio}$</p>
+                    <p>PRECIO: ${formatPrice(car.precio)}</p>
                 </div>
             </div>
             <div class="buttons">
@@ -49,10 +49,24 @@
 
         })
     })
-    })();
+})();
 
 
+function formatPrice(price) {
+    let formatedPrice = price.toString(),
+        float;
 
-  
+    if (formatedPrice.match(/\./)) {
+        float = formatedPrice.split('.')[1];
+        float = float.slice(0, 2);
+        formatedPrice = formatedPrice.split('.')[0];
+    } else 
+        float = '00';
 
+    if (formatedPrice.length > 3) {
+        formatedPrice = formatedPrice.split('').reverse().join('').replace(/(?=\d*)(\d{3})/g,'$1.');
+        formatedPrice = formatedPrice.split('').reverse().join('').replace(/^[\.]/,'');
+    }
 
+    return `$${formatedPrice},${float}`
+}

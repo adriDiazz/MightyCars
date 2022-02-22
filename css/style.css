@@ -1,5 +1,6 @@
 @import url(./normalize.css);
 @import url(./global.css);
+@import url(./products.css);
 
 /* @import url(./responsive.css); */
 
@@ -379,7 +380,7 @@ body .hidden {
 
 
 
-.hero-prod {
+/* .hero-prod {
   height: 100%;
   overflow: hidden;
 }
@@ -396,7 +397,7 @@ body .hidden {
 
 .hero-prod img{
   height: 50%;
-  /* position: fixed; */
+  /* position: fixed; 
 }
 
 .cards__container {
@@ -439,7 +440,7 @@ body .hidden {
 
 .name__cards_info p {
   font-weight: 100;
-  /* color: var(--red--color); */
+  /* color: var(--red--color); 
 }
 
 .buttons {
@@ -497,7 +498,7 @@ body .hidden {
   user-select: none; 
    -webkit-user-select: none; 
    touch-action: manipulation;
-}
+} */
 
 /* cart */
 
@@ -559,11 +560,6 @@ body .hidden {
   /* font-weight:500; */
 }
 
-.cards img {
-  width: 50px;
-  height: 50px;
-  object-fit: contain;
-}
 
 
 
@@ -801,22 +797,26 @@ body .hidden {
     width: 0;
   }
 
-  .cards__container {
-    margin-top: 0;
-  }
-
   .hero-prod{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
- .linea-hero {
-   width: 100%;
-   height: 100px;
-   background-color: var(--red--color);
-   }
 
+ .linea-hero {
+    width: 100%;
+    height: 100px;
+    background-color: var(--red--color);
+  }
+
+  .cards__container {
+    margin-top: 0;
+  }
+
+  .cards{
+    display: flex;
+  }
 
 }
 
@@ -834,14 +834,7 @@ body .hidden {
     height: 25%;
   }
 
-  .cards{
-    display: flex;
-    
-
-  }
-
-  .cards img{
-    width: 100%;
+  .cards img {
     object-fit: contain;
 
   }
