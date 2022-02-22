@@ -37,7 +37,7 @@ body {
   height: 79px;
   width: 100%;
   position: fixed;
-  z-index: 99;
+  z-index: 2001;
   background-color: var(--bg--color--alpha);
 }
 
