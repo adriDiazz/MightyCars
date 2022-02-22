@@ -15,7 +15,6 @@
 
 .hero-prod img{
   height: 50%;
-  /* position: fixed; */
 }
 
 .cards__container {
@@ -63,7 +62,6 @@
 
 .name__cards_info p {
   font-weight: 100;
-  /* color: var(--red--color); */
 }
 
 .buttons {
