@@ -312,7 +312,7 @@ body .hidden {
 
 .pre_shoping_container{
   width: 100%;
-  height: 20%;
+  height: 25%;
   display: flex;
   justify-content:center;
   flex-direction: column;
@@ -349,8 +349,8 @@ body .hidden {
 .hide-continue-cart{
   display: flex;
   width: 100vw;
-  height: 150vh;
-  position: absolute;
+  height: 100vh;
+  position: fixed;
   justify-content: center;
   align-items: center;
   z-index: 9999;
