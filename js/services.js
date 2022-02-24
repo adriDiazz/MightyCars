@@ -2,6 +2,7 @@
 (function(){
     // some code…
     const card = document.querySelector('.cards__container');
+    const continueShoping = document.querySelector('.pre_shoping_container_bg');
     count = 0
     if(localStorage.getItem('cartTimes') > 0){
         count2 = localStorage.getItem('cartTimes')
@@ -45,6 +46,9 @@
                 console.log(nameCarro)
                 localStorage.setItem(`cart${count2}`,nameCarro);
                 localStorage.setItem(`cartTimes`,count2);
+                continueShoping.classList.add('hide-continue-cart');
+                continueShoping.classList.remove('pre_shoping_container_bg');
+
             })  
 
         })
