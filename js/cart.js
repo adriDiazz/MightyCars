@@ -1,4 +1,5 @@
 const carrContainer = document.querySelector('.cards__cart');
+const container = document.querySelector('.pre_shoping_container_bg-')
 const btnBuy = document.querySelector('.btn-buy');
 console.log(btnBuy);
 
@@ -25,4 +26,6 @@ carsOnCart.map((car) => {
 
 btnBuy.addEventListener('click', () => {
 	localStorage.clear();
+  container.classList.add('hide-continue-cart-')
+
 });

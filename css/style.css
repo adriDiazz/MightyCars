@@ -357,6 +357,21 @@ body .hidden {
   background-color: rgba(0, 0, 0, 0.781);
 }
 
+.pre_shoping_container_bg-{
+  display: none;
+}
+
+.hide-continue-cart-{
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.781);
+}
+
 /* añado responsive al final del css por la cascada */
 @media (min-width: 768px) {
   .header {
